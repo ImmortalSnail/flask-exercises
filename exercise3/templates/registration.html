@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+ 
+<body></body>
+    <h1>Registration Record</h1>
+    <p>The following students have registered for a club: </p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Club</th>
+        </tr>
+        {%for value in dict %}
+        <tr>
+              <td class="col-md-2">{{ value }}</td>
+              <td class="col-md-2">{{ dict[value] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for("exercise3") }}">Home</a>
+</body>
+ 
+</html>

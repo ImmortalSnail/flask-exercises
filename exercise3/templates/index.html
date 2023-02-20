@@ -10,6 +10,19 @@
     <form action="{{ url_for("register") }}" method="post">
         <label for="number">Enter your name: </label>
         <input type="text" name="name" placeholder="Name">
+        <div>
+            <p>What club would you like to join?</p>
+            <input type="radio" name="club" value="Coding Club">
+            <label for="html">Coding Club</label><br>
+            <input type="radio" name="club" value="Gaming Club">
+            <label for="css">Gaming Club</label><br>
+            <input type="radio" name="club" value="Basketball Club">
+            <label for="javascript">Basketball Club</label><br>
+            <input type="radio" name="club" value="Art Club">
+            <label for="html">Art Club</label><br>
+            <input type="radio" name="club" value="Movies Club">
+            <label for="css">Movies Club</label><br>
+        </div>
         <button type="submit">Submit</button>
     </form>
 </body>
