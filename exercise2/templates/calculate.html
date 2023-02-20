@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+ 
+<body>
+    <h1>Calculate</h1>
+    {% block body %}
+        {% if inp %}
+            {% if number % 2 == 0 %}
+                <p>{{number}} is even</p>
+            {% else %}
+                <p>{{number}} is odd</p>
+            {% endif %}
+        {% else %}
+            {% if number == 0 %}
+                <p>Didn't receive a number as input</p>
+            {% else %}
+                <p>No input received</p>
+            {% endif %} 
+        {% endif %}
+    {% endblock %}
+
+    <a href="{{ url_for("exercise2") }}">Home</a>
+</body>
+ 
+</html>
