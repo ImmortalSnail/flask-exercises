@@ -6,6 +6,6 @@ from datetime import datetime
 app = Flask(__name__)
 
 @app.route("/", methods=['GET'])
-def hello_world():
+def exercise1():
     time = str(datetime.now())[:19]
     return render_template("index.html", time=time)
